@@ -628,7 +628,7 @@
                      * @return {Locker}
                      */
                     driver: function (driver) {
-                        return this.instance(angular.extend(this._options, { driver: driver }));
+                        return this.instance(angular.extend({}, this._options, { driver: driver }));
                     },
 
                     /**
@@ -652,7 +652,7 @@
                      * @return {Locker}
                      */
                     namespace: function (namespace) {
-                        return this.instance(angular.extend(this._options, { namespace: namespace }));
+                        return this.instance(angular.extend({}, this._options, { namespace: namespace }));
                     },
 
                     /**
